@@ -14,7 +14,6 @@ public class TestBaseSwordfishSecurity {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://swordfish-security.ru/";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.browser = "chrome";
     }
 
     @AfterEach
