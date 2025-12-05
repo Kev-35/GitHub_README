@@ -1,8 +1,5 @@
 package tests.ru.kev35;
 
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,11 +10,6 @@ import static io.qameta.allure.Allure.step;
 
 public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
     MainPage data = new MainPage();
-
-    @BeforeEach
-            public void setBeforeEachTest(){
-        SelenideLogger.addListener("allure", new AllureSelenide());
-    }
 
 
     @Test
