@@ -9,7 +9,7 @@ public class MainPage {
 
     private final SelenideElement
             buttonSearch = $("[data-elem-id='1749735775626']"),
-            fildSearch = $("#rec1099102516").$("[placeholder='Поиск']"),
+            fildSearch = $("#rec1099102516").$("[placeholder='Search']"),
             textOnBoardResult = $(".t-title"),
             buttonServices = $("#molecule-174858653564456840"),
             buttonCenterOfExpertise = $("#molecule-174858653564456840"),
