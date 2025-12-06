@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
@@ -19,46 +20,53 @@ public class MainPage {
             menuCallToAss = $("div#popuptitle_1194990936");
 
 
-    public MainPage removingBanner(){
+    public MainPage removingBanner() {
         executeJavaScript("$('#t-footer').remove();");
         return this;
     }
 
-    public MainPage openPage(){
+    public MainPage openPage() {
         open(baseUrl);
         return this;
     }
 
-    public void clickButtonSearch(){
+    public void clickButtonSearch() {
         buttonSearch.click();
     }
 
-    public void setTextInFildSearch(String value){
+    public void setTextInFildSearch(String value) {
         fildSearch.setValue(value).pressEnter();
 
     }
-    public void checkTextOnBoardResults(String value){
+
+    public void checkTextOnBoardResults(String value) {
         textOnBoardResult.shouldHave(text(value));
     }
-    public MainPage checkbuttonServices(String value){
+
+    public MainPage checkbuttonServices(String value) {
         buttonServices.shouldHave(text(value));
         return this;
     }
-    public MainPage checkbuttonCenterOfExpertise(String value){
+
+    public MainPage checkbuttonCenterOfExpertise(String value) {
         buttonCenterOfExpertise.shouldHave(text(value));
         return this;
     }
-    public MainPage checkbuttonAboutTheCompany(String value){
+
+    public MainPage checkbuttonAboutTheCompany(String value) {
         buttonAboutTheCompany.shouldHave(text(value));
         return this;
     }
-    public void checkbuttonContacts(String value){
+
+    public void checkbuttonContacts(String value) {
         buttonContacts.shouldHave(text(value));
     }
-    public void clickCallToUs(){
+
+    public void clickCallToUs() {
         callToAss.click();
     }
-    public void checkMenuCallToAss(String value){
+
+    public void checkMenuCallToAss(String value) {
         menuCallToAss.shouldHave(text(value));
     }
 }
