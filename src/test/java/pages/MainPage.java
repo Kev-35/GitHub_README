@@ -29,14 +29,12 @@ public class MainPage {
         return this;
     }
 
-    public MainPage clickButtonSearch(){
+    public void clickButtonSearch(){
         buttonSearch.click();
-        return this;
     }
 
-    public MainPage setTextInFildSearch(String value){
+    public void setTextInFildSearch(String value){
         fildSearch.setValue(value).pressEnter();
-        return this;
 
     }
     public void checkTextOnBoardResults(String value){
@@ -57,9 +55,8 @@ public class MainPage {
     public void checkbuttonContacts(String value){
         buttonContacts.shouldHave(text(value));
     }
-    public MainPage clickCallToUs(){
+    public void clickCallToUs(){
         callToAss.click();
-        return this;
     }
     public void checkMenuCallToAss(String value){
         menuCallToAss.shouldHave(text(value));

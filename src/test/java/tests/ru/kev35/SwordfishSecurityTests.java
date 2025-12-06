@@ -14,61 +14,59 @@ public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Поиск информации \"О Компании\" в поле \"Поиск\"")
-    public void searchInfo1(){
+    @DisplayName("Поиск информации \"О Компании\" в поле \"Search\"")
+    public void searchInfo1() {
 
-        step("Открываем главную страницу сайта", () -> {
-            data.openPage()
-                 .removingBanner()
-                 .clickButtonSearch();});
+        step("Открываем главную страницу сайта", () -> data.openPage()
+                .removingBanner()
+                .clickButtonSearch());
 
-        step("В поле поиска вбиваем данные = О компании", () -> {
-            data.setTextInFildSearch("О компании");});
+        step("В поле поиска вбиваем данные = О компании", () -> data.setTextInFildSearch("О компании"));
 
-        step("Проверяем результаты запроса", () -> data.checkTextOnBoardResults("Результаты по запросу: О компании"));
+        step("Проверяем результаты запроса", () -> data.checkTextOnBoardResults("Results for: О компании"));
     }
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Поиск информации \"Контакты\" в поле \"Поиск\"")
-    public void searchInfo2(){
+    @DisplayName("Поиск информации \"Контакты\" в поле \"Search\"")
+    public void searchInfo2() {
 
-        step("Открываем главную страницу сайта", () -> {
-            data.openPage()
-                    .removingBanner()
-                    .clickButtonSearch();});
+        step("Открываем главную страницу сайта", () -> data.openPage()
+                .removingBanner()
+                .clickButtonSearch());
 
-        step("В поле поиска вбиваем данные = Контакты", () -> {
-            data.setTextInFildSearch("Контакты");});
+        step("В поле поиска вбиваем данные = Контакты", () -> data.setTextInFildSearch("Контакты"));
 
-        step("Проверяем результаты запроса", () -> data.checkTextOnBoardResults("Результаты по запросу: Контакты"));
+        step("Проверяем результаты запроса", () -> data.checkTextOnBoardResults("Results for: Контакты"));
     }
 
     @Test
     @Tag("mainPage")
     @DisplayName("Проверка пунктов главного меню")
-    public void mainTextOnBanner(){
+    public void mainTextOnBanner() {
         step("Открываем главную страницу сайта", () -> {
             data.openPage()
-                    .removingBanner();});
+                    .removingBanner();
+        });
 
-        step("Кликаем на кнопку - Услуги", ()->{
-                    data.clickButtonSearch();});
-        step("Проверяем состав разделов", ()-> data.checkbuttonServices("Услуги")
-        .checkbuttonCenterOfExpertise("Центр экспертизы")
-        .checkbuttonAboutTheCompany("О компании")
-        .checkbuttonContacts("Контакты"));
+        step("Кликаем на кнопку - Услуги", () -> data.clickButtonSearch());
+
+        step("Проверяем состав разделов", () -> data.checkbuttonServices("Услуги")
+                .checkbuttonCenterOfExpertise("Центр экспертизы")
+                .checkbuttonAboutTheCompany("О компании")
+                .checkbuttonContacts("Контакты"));
     }
 
     @Test
     @Tag("mainPage")
     @DisplayName("Открытие меню Связаться с нами")
-    public void openMenuCallToAss(){
+    public void openMenuCallToAss() {
         step("Открываем главную страницу сайта", () -> {
             data.openPage()
-                    .removingBanner();});
-        step("Кликаем на кнопку - Услуги", ()->{
-                data.clickCallToUs();});
+                    .removingBanner();
+        });
+
+        step("Кликаем на кнопку - Услуги", () -> data.clickCallToUs());
 
         step("Проверяем результаты запроса", () -> data.checkMenuCallToAss("Связаться с нами"));
     }
