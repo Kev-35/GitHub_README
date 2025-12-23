@@ -42,7 +42,7 @@ public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Проверка пунктов главного меню")
+    @DisplayName("Проверка разделов главного меню")
     public void mainTextOnBanner() {
         step("Открываем главную страницу сайта", () -> {
             data.openPage()

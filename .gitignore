@@ -41,3 +41,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/notifications/config.json
+/gradlew
+/gradlew.bat
+/notifications/draft.txt
