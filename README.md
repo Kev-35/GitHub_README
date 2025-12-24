@@ -68,6 +68,12 @@ ____
 
 
 
+## Пример видео с выполнением теста
+<p align="center">  
+<img src="files/video/c7680257db790e99f144a69f40efb9df.mp4"/>
+</p>
+
+
 
 
 
