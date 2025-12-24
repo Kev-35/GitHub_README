@@ -59,7 +59,7 @@ gradle clean mainPage
 clean ${TESTS} -Dremote=${REMOTE} -Dbrowser=${BROWSER} -DbrowserSize=${BROWSER_SIZE} -DbrowserVersion=${BROWSER_VERSION}
 ```
 ____
-## <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg"> <a name="Пример Allure Report">**Пример Allure отчета**</a>
+## <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg"> <a name="Пример Allure отчета">**Пример Allure отчета**</a>
 [Ссылка на Allure отчёт](https://jenkins.autotests.cloud/job/038-Anna_Shelyakina-Jenkins-arcadia-project/allure/)
 
 СКРИН НА ПРОЙДЕННЫЕ ТЕСТЫ В АЛЮРЕ
@@ -67,8 +67,7 @@ ____
 ## <a name="Уведомления в Telegram">**Уведомления в Telegram:**</a>
 ФОТО ИЗ ПРОГОНА ТГ
 ____
-
-## Пример видео с выполнением теста
+## <a name="Пример видео с выполнением теста">**Пример видео с выполнением теста:**</a>
 <p align="center">  
 <img src="files/video/c7680257db790e99f144a69f40efb9df.gif"/>
 </p>
