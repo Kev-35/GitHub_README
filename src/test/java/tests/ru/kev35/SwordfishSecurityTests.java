@@ -11,6 +11,22 @@ import static io.qameta.allure.Allure.step;
 public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
     MainPage data = new MainPage();
 
+    @Test
+    @Tag("mainPage")
+    @DisplayName("Проверка разделов главного меню")
+    public void mainTextOnBanner() {
+        step("Открываем главную страницу сайта", () -> {
+            data.openPage()
+                    .removingBanner();
+        });
+
+        step("Кликаем на кнопку - Услуги", () -> data.clickButtonSearch());
+
+        step("Проверяем состав разделов", () -> data.checkbuttonServices("Услуги")
+                .checkbuttonCenterOfExpertise("Центр экспертизы")
+                .checkbuttonAboutTheCompany("О компании")
+                .checkbuttonContacts("Контакты"));
+    }
 
     @Test
     @Tag("mainPage")
@@ -42,24 +58,7 @@ public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Проверка разделов главного меню")
-    public void mainTextOnBanner() {
-        step("Открываем главную страницу сайта", () -> {
-            data.openPage()
-                    .removingBanner();
-        });
-
-        step("Кликаем на кнопку - Услуги", () -> data.clickButtonSearch());
-
-        step("Проверяем состав разделов", () -> data.checkbuttonServices("Услуги")
-                .checkbuttonCenterOfExpertise("Центр экспертизы")
-                .checkbuttonAboutTheCompany("О компании")
-                .checkbuttonContacts("Контакты"));
-    }
-
-    @Test
-    @Tag("mainPage")
-    @DisplayName("Открытие меню Связаться с нами")
+    @DisplayName("Открыване меню Связаться с нами")
     public void openMenuCallToAss() {
         step("Открываем главную страницу сайта", () -> {
             data.openPage()
