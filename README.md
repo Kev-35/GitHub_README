@@ -12,7 +12,7 @@ ____
 - [Запуск тестов через терминал](#запуск тестов через терминал)
 - [Пример Allure отчета](#пример-allure-отчета)
 - [Уведомления в Telegram](#уведомления-в-telegram)
-- [Пример видео с выполнением теста в selenoid](#пример-видео-с-выполнением-теста-в-selenoid)
+- [Видео примера запуска тестов в Selenoid](#ввидео-примера-запуска-тестов-в-selenoid)
 ____
 
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -46,9 +46,7 @@ ____
 [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/38-belebear-rigla_project_lesson12/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />
 ____
 ## <a name="Запуск тестов через терминал">**Запуск тестов через терминал:**</a>
-
-
-### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Idea.svg"> Локальный запуст тестов в Idea
+### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Idea.svg"> Локальный запуск тестов в Idea
 
 ```
 gradle clean mainPage
@@ -59,15 +57,16 @@ gradle clean mainPage
 clean ${TESTS} -Dremote=${REMOTE} -Dbrowser=${BROWSER} -DbrowserSize=${BROWSER_SIZE} -DbrowserVersion=${BROWSER_VERSION}
 ```
 ____
-## <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg"> <a name="Пример Allure отчета">**Пример Allure отчета**</a>
+## <a name="Пример Allure отчета">**Пример Allure отчета**</a> <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg">
 [Ссылка на Allure отчёт](https://jenkins.autotests.cloud/job/038-Anna_Shelyakina-Jenkins-arcadia-project/allure/)
 
 СКРИН НА ПРОЙДЕННЫЕ ТЕСТЫ В АЛЮРЕ
 ____
 ## <a name="Уведомления в Telegram">**Уведомления в Telegram:**</a>
+#Отчет после прохождения тестов от чат-бота
 ФОТО ИЗ ПРОГОНА ТГ
 ____
-## <a name="Пример видео с выполнением теста">**Пример видео с выполнением теста:**</a>
+## <a name="Видео примера запуска тестов в Selenoid">**Видео примера запуска тестов в Selenoid:**</a>
 <p align="center">  
 <img src="files/video/c7680257db790e99f144a69f40efb9df.gif"/>
 </p>
