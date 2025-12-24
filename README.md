@@ -9,7 +9,7 @@ ____
 - [Технологии и инструменты](#технологии-и-инструменты)
 - [Примеры тест кейсов](#примеры-тест-кейсов)
 - [Сборка в Jenkins](#сборка-в-jenkins)
-- [Запуск тестов через терминал](#запуск тестов через терминал)
+- [Запуск тестов через терминал](#запуск-тестов-через-терминал)
 - [Пример Allure отчета](#пример-allure-отчета)
 - [Уведомления в Telegram](#уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#ввидео-примера-запуска-тестов-в-selenoid)
@@ -58,12 +58,12 @@ clean ${TESTS} -Dremote=${REMOTE} -Dbrowser=${BROWSER} -DbrowserSize=${BROWSER_S
 ```
 ____
 ## <a name="Пример Allure отчета">**Пример Allure отчета**</a> <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg">
+
 [Ссылка на Allure отчёт](https://jenkins.autotests.cloud/job/038-Anna_Shelyakina-Jenkins-arcadia-project/allure/)
 
 СКРИН НА ПРОЙДЕННЫЕ ТЕСТЫ В АЛЮРЕ
 ____
-## <a name="Уведомления в Telegram">**Уведомления в Telegram:**</a>
-#Отчет после прохождения тестов от чат-бота
+## <a name="Уведомления в Telegram">**Уведомления в Telegram**</a> <img width="4%" style="vertical-align:middle" title="Telegram" src="files/logo/Telegram.svg">
 ФОТО ИЗ ПРОГОНА ТГ
 ____
 ## <a name="Видео примера запуска тестов в Selenoid">**Видео примера запуска тестов в Selenoid:**</a>
