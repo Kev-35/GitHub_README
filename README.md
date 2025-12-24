@@ -3,18 +3,16 @@
 
 > Эксперты Swordfish Security помогают выстроить комплексную защиту программного обеспечения и систем с искусственным интеллектом, снижая вероятность атак на ПО через уязвимости, компрометацию моделей и агентов.
 
-## <a name="Содержание:">**Содержание:**</a>
+## <a name="Содержание">**Содержание:**</a>
 ____
 
 - [Технологии и инструменты](#технологии-и-инструменты)
-- [Примеры автоматизированных тест-кейсов:](#примеры-автоматизированных-тест-кейсов:)
-- [Запуск автотестов](#computer-запуск-автотестов)
-- [Сборка в Jenkins](#-сборка-в-jenkins)
-- [Пример Allure Report](#-пример-allure-отчета)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
-- [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
+- [Примеры тест кейсов](#примеры-тест-кейсов)
+- [Сборка в Jenkins](#сборка-в-jenkins)
+- [Запуск тестов через терминал](#запуск тестов через терминал)
+- [Пример Allure отчета](#пример-allure-отчета)
+- [Уведомления в Telegram](#уведомления-в-telegram)
+- [Пример видео с выполнением теста в selenoid](#пример-видео-с-выполнением-теста-в-selenoid)
 ____
 
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -38,8 +36,7 @@ ____
 - Запуск реализован через <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
 - Интеграция с и <code>Jira</code>
 ____
-<a id="cases"></a>
-## <a name="Примеры автоматизированных тест кейсов">**Примеры автоматизированных тест-кейсов:**</a>
+## <a name="Примеры тест кейсов">**Примеры тест кейсов:**</a>
 -  Проверка разделов главного меню
 -  Поиск информации "О Компании" в поле "Search"
 -  Поиск информации "Контакты" в поле "Search
@@ -48,7 +45,6 @@ ____
 ## <a name="Сборка в">**Сборка в Jenkins**</a> 
 [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/38-belebear-rigla_project_lesson12/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />
 ____
-<a id="cases"></a>
 ## <a name="Запуск тестов через терминал">**Запуск тестов через терминал:**</a>
 
 
@@ -63,15 +59,18 @@ gradle clean mainPage
 clean ${TESTS} -Dremote=${REMOTE} -Dbrowser=${BROWSER} -DbrowserSize=${BROWSER_SIZE} -DbrowserVersion=${BROWSER_VERSION}
 ```
 ____
-## <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg"> <a name="Пример Allure Report">**Пример Allure Report**</a>
+## <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg"> <a name="Пример Allure Report">**Пример Allure отчета**</a>
 [Ссылка на Allure отчёт](https://jenkins.autotests.cloud/job/038-Anna_Shelyakina-Jenkins-arcadia-project/allure/)
+
+СКРИН НА ПРОЙДЕННЫЕ ТЕСТЫ В АЛЮРЕ
 ____
-
-
+## <a name="Уведомления в Telegram">**Уведомления в Telegram:**</a>
+ФОТО ИЗ ПРОГОНА ТГ
+____
 
 ## Пример видео с выполнением теста
 <p align="center">  
-<img src="files/video/c7680257db790e99f144a69f40efb9df.mp4"/>
+<img src="files/video/c7680257db790e99f144a69f40efb9df.gif"/>
 </p>
 
 
