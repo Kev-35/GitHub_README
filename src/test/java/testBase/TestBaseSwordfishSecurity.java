@@ -20,7 +20,7 @@ public class TestBaseSwordfishSecurity {
         Configuration.browserVersion = System.getProperty("browserVersion", "126.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = System.getProperty("remote");
-        Configuration.baseUrl = "swordfish-security.ru";
+        Configuration.baseUrl = "https://swordfish-security.ru/";
         Configuration.pageLoadStrategy = "eager";
         Configuration.headless = false;
         DesiredCapabilities capabilities = new DesiredCapabilities();
