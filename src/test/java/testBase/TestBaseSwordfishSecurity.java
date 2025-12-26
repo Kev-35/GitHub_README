@@ -19,7 +19,7 @@ public class TestBaseSwordfishSecurity {
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "127.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.remote = System.getProperty("remote");
+        Configuration.remote = ("https://user1:1234@selenoid.autotests.cloud/wd/hub");
         Configuration.baseUrl = "https://swordfish-security.ru/";
         Configuration.pageLoadStrategy = "eager";
         Configuration.headless = false;
