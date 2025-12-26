@@ -1,5 +1,5 @@
 # Проект по автоматизации тестирования для компании [SWORDFISH SECURITY](https://swordfish-security.ru/)
-<img width="40%" title="Arcadia" src="files/logo/MainLogo.png">
+<img width="40" title="Arcadia" src="files/logo/MainLogo.png" alt="">
 
 > Эксперты Swordfish Security помогают выстроить комплексную защиту программного обеспечения и систем с искусственным интеллектом, снижая вероятность атак на ПО через уязвимости, компрометацию моделей и агентов.
 
@@ -50,7 +50,7 @@ ____
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Idea.svg"> Локальный запуск тестов в Idea
 ____
 ```
-gradle clean mainPage
+gradle clean swordfishSecurity
 ```
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Selenoid.svg"> Удалённый запуст тестов в Jenkins
 ____
