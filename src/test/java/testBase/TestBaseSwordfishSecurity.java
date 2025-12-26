@@ -17,15 +17,17 @@ public class TestBaseSwordfishSecurity {
     static void setUpConfig() {
 
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "127.0");
-        Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
-        Configuration.baseUrl = "https://swordfish-security.ru/";
+        Configuration.browserVersion = System.getProperty("browserVersion", "126.0");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.remote = System.getProperty("remote");
+        Configuration.baseUrl = "swordfish-security.ru";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.remote = System.getProperty("https://user1:1234@selenoid.autotests.cloud/wd/hub");
         Configuration.headless = false;
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.of("enableVNC", true, "enableVideo", true));
+        capabilities.setCapability("selenoid:options", Map.of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
         Configuration.browserCapabilities = capabilities;
     }
 
