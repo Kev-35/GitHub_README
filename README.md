@@ -1,5 +1,5 @@
 # Проект по автоматизации тестирования для компании [SWORDFISH SECURITY](https://swordfish-security.ru/)
-<img width="40" title="Arcadia" src="files/logo/MainLogo.png" alt="">
+<img width="240" title="Arcadia" src="files/logo/MainLogo.png" alt="">
 
 > Эксперты Swordfish Security помогают выстроить комплексную защиту программного обеспечения и систем с искусственным интеллектом, снижая вероятность атак на ПО через уязвимости, компрометацию моделей и агентов.
 
