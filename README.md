@@ -44,7 +44,7 @@ ____
 -  "Открытие меню "Связаться с нами"
 ____
 ## <a name="Сборка в">**Сборка в Jenkins**</a> 
-[Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/38-belebear-rigla_project_lesson12/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />
+[Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/038-SwordfishSecurityBuild/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />
 ____
 ## <a name="Запуск тестов">**Запуск тестов:**</a>
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Idea.svg"> Локальный запуск тестов в Idea
