@@ -17,7 +17,7 @@ public class TestBaseSwordfishSecurity {
     static void setUpConfig() {
 
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "127.0");
+        Configuration.browserVersion = System.getProperty("browserVersion", "132.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = System.getProperty("remote");
         Configuration.baseUrl = "https://swordfish-security.ru/";
