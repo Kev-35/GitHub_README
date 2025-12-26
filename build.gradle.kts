@@ -55,14 +55,17 @@ dependencies {
     tasks.withType<Test> {
         useJUnitPlatform()
 
+        // ПЕРЕДАЧА СИСТЕМНЫХ СВОЙСТВ (Добавьте эту строку)
+        systemProperties(System.getProperties().toMap() as Map<String, Any>)
+
         testLogging {
             lifecycle {
                 events("started", "skipped", "failed", "standard_error", "standard_out")
-                // Замените "short" на TestExceptionFormat.SHORT
                 exceptionFormat = TestExceptionFormat.SHORT
             }
         }
     }
+
     tasks.register("swordfishSecurity", Test::class) {
         useJUnitPlatform {
             includeTags("mainPage") // запуск тестов по Тегу запуск
