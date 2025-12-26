@@ -58,7 +58,7 @@ public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Открыване меню Связаться с нами")
+    @DisplayName("Открытие меню \"Связаться с нами\"")
     public void openMenuCallToAss() {
         step("Открываем главную страницу сайта", () -> {
             data.openPage()

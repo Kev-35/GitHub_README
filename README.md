@@ -7,12 +7,12 @@
 ____
 
 - [Технологии и инструменты](#технологии-и-инструменты)
-- [Примеры тест кейсов](#примеры-тест-кейсов)
+- [Примеры автотестов](#примеры-тест-кейсов)
 - [Сборка в Jenkins](#сборка-в-jenkins)
-- [Запуск тестов через терминал](#запуск-тестов-через-терминал)
+- [Запуск тестов](#запуск-тестов)
 - [Пример Allure отчета](#пример-allure-отчета)
 - [Уведомления в Telegram](#уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#ввидео-примера-запуска-тестов-в-selenoid)
+- [Видео примера запуска тестов Selenoid](#ввидео-примера-запуска-тестов-selenoid)
 ____
 
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -27,6 +27,7 @@ ____
 <a href="https://aerokube.com/selenoid/"><img src="files/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="files/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>  
 <a href="https://www.jenkins.io/"><img src="files/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
+<a href="https://www.atlassian.com/software/jira/"><img src="files/logo/Jira.svg" width="50" height="50"  alt="Jira"/></a>
 </p>
 
 В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования <code>Selenide</code>.
@@ -36,23 +37,23 @@ ____
 - Запуск реализован через <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
 - Интеграция с и <code>Jira</code>
 ____
-## <a name="Примеры тест кейсов">**Примеры тест кейсов:**</a>
+## <a name="Примеры тест кейсов">**Примеры автотестов:**</a>
 -  Проверка разделов главного меню
 -  Поиск информации "О Компании" в поле "Search"
 -  Поиск информации "Контакты" в поле "Search
--  Проверка ввода некорректного email, заполнения чек-бокса и нажатия кнопки подписки на рассылку*
+-  "Открытие меню "Связаться с нами"
 ____
 ## <a name="Сборка в">**Сборка в Jenkins**</a> 
 [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/38-belebear-rigla_project_lesson12/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />
 ____
-## <a name="Запуск тестов через терминал">**Запуск тестов через терминал:**</a>
+## <a name="Запуск тестов">**Запуск тестов:**</a>
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Idea.svg"> Локальный запуск тестов в Idea
-
+____
 ```
 gradle clean mainPage
 ```
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Selenoid.svg"> Удалённый запуст тестов в Jenkins
-
+____
 ```
 clean ${TESTS} -Dremote=${REMOTE} -Dbrowser=${BROWSER} -DbrowserSize=${BROWSER_SIZE} -DbrowserVersion=${BROWSER_VERSION}
 ```
