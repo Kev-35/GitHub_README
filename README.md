@@ -55,17 +55,22 @@ gradle clean mainPage
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Selenoid.svg"> Удалённый запуст тестов в Jenkins
 ____
 ```
-clean ${TESTS} -Dremote=${REMOTE} -Dbrowser=${BROWSER} -DbrowserSize=${BROWSER_SIZE} -DbrowserVersion=${BROWSER_VERSION}
+clean
+${TASK}
+-Dbrowser=${BROWSER}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-Dremote=https://user1:1234@${REMOTE}/wd/hub
 ```
 ____
 ## <a name="Пример Allure отчета">**Пример Allure отчета**</a> <img width="4%" style="vertical-align:middle" title="Allure" src="files/logo/Allure.svg">
 
-[Ссылка на Allure отчёт](https://jenkins.autotests.cloud/job/038-Anna_Shelyakina-Jenkins-arcadia-project/allure/)
-
-СКРИН НА ПРОЙДЕННЫЕ ТЕСТЫ В АЛЮРЕ
+[Ссылка на Allure отчёт](https://jenkins.autotests.cloud/job/038-SwordfishSecurityBuild/15/allure/)
+### <img width="100%" style="vertical-align:middle" title="Allure_report" src="files/screen/Allure_report.png">
+### <img width="100%" style="vertical-align:middle" title="Allure_testCase" src="files/screen/Allure_testCase.png">
 ____
 ## <a name="Уведомления в Telegram">**Уведомления в Telegram**</a> <img width="4%" style="vertical-align:middle" title="Telegram" src="files/logo/Telegram.svg">
-ФОТО ИЗ ПРОГОНА ТГ
+### <img width="100%" style="vertical-align:middle" title="Telegram" src="files/screen/Telegram.png">
 ____
 ## <a name="Видео примера запуска тестов в Selenoid">**Видео примера запуска тестов в Selenoid:**</a>
 <p align="center">  
