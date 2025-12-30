@@ -40,8 +40,9 @@ ____
 ## <a name="Примеры тест кейсов">**Примеры автотестов:**</a>
 -  Проверка разделов главного меню
 -  Поиск информации "О Компании" в поле "Search"
--  Поиск информации "Контакты" в поле "Search
--  "Открытие меню "Связаться с нами"
+-  Поиск информации "Контакты" в поле "Search"
+-  Открытие меню "Связаться с нами"
+-  Проверка открытия подробностей по кнопке "Подробнее"
 ____
 ## <a name="Сборка в">**Сборка в Jenkins**</a> 
 [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/038-SwordfishSecurityBuild/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />

@@ -67,7 +67,7 @@ public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Клик кнопка \"Подробнее\"")
+    @DisplayName("Проверка открытия подробностей по кнопке \"Подробнее\"")
     public void openCenterOfExpertise() {
         step("Открываем главную страницу сайта", () -> {
             data.openPage()
