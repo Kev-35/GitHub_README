@@ -13,7 +13,7 @@ public class MainPage {
 
     private final SelenideElement
             buttonSearch = $("[data-elem-id='1749735775626']"),
-            filedSearch = $("#rec1099102516").$("[placeholder='Поиск']"),
+            filedSearch = $("#rec1099102516").$("[placeholder='Search']"),
             textOnBoardResult = $(".t-title"),
             callToAss = $("[data-elem-id='1748586525311']"),
             menuCallToAss = $("div#popuptitle_1194990936");
