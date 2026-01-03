@@ -35,7 +35,7 @@ ____
 - Использованы фреймворки <code>JUnit 5</code> и <code>Selenide</code>.
 - Прогон автотестов запускается на удалённом сервере <code>Selenoid</code>.
 - Запуск реализован через <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
-- Интеграция с и <code>Jira</code>
+- Интеграция с <code>Jira</code>
 ____
 ## <a name="Примеры тест кейсов">**Примеры автотестов:**</a>
 -  Проверка разделов главного меню
@@ -46,18 +46,18 @@ ____
 ____
 ## <a name="Сборка в">**Сборка в Jenkins**</a> 
 [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/038-SwordfishSecurityBuild/) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" widht="40" height="40" />
+<img width="100%" style="vertical-align:middle" title="Allure_report" src="files/screen/Allure_report.png">
 ____
 ## <a name="Запуск тестов">**Запуск тестов:**</a>
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Idea.svg"> Локальный запуск тестов в Idea
 ____
 ```
-gradle clean swordfishSecurity
+gradle clean test
 ```
 ### <img width="4%" style="vertical-align:middle" title="Jenkins" src="files/logo/Selenoid.svg"> Удалённый запуст тестов в Jenkins
 ____
 ```
-clean
-${TASK}
+clean test
 -Dbrowser=${BROWSER}
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}

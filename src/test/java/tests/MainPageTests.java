@@ -1,4 +1,4 @@
-package tests.ru.kev35;
+package tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -7,7 +7,7 @@ import pages.MainPage;
 
 import static io.qameta.allure.Allure.step;
 
-public class SwordfishSecurityTests extends TestBaseSwordfishSecurity {
+public class MainPageTests extends TestBase {
     MainPage data = new MainPage();
 
     @Test

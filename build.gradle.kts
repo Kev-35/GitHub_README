@@ -38,24 +38,16 @@ dependencies {
     testImplementation("org.slf4j:slf4j-simple:2.0.16")
 }
 
-    tasks.withType<Test> {
-        useJUnitPlatform()
+tasks.withType<Test> {
+    useJUnitPlatform()
 
-        // ПЕРЕДАЧА СИСТЕМНЫХ СВОЙСТВ (Добавьте эту строку)
-        systemProperties(System.getProperties().toMap() as Map<String, Any>)
+    // ПЕРЕДАЧА СИСТЕМНЫХ СВОЙСТВ (Добавьте эту строку)
+    systemProperties(System.getProperties().toMap() as Map<String, Any>)
 
-        testLogging {
-            lifecycle {
-                events("started", "skipped", "failed", "standard_error", "standard_out")
-                exceptionFormat = TestExceptionFormat.SHORT
-            }
+    testLogging {
+        lifecycle {
+            events("started", "skipped", "failed", "standard_error", "standard_out")
+            exceptionFormat = TestExceptionFormat.SHORT
         }
     }
-
-    tasks.register("swordfishSecurity", Test::class) {
-        useJUnitPlatform {
-            includeTags("mainPage") // запуск тестов по Тегу запуск
-//     (или в терминале, или в дженкинсе -> gradle demoqa
-//            excludeTags("Tag") исключает тесты по Тегу
-        }
-    }
+}
