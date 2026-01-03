@@ -73,7 +73,7 @@ ____
 ### <img width="100%" style="vertical-align:middle" title="Allure_testCase" src="files/screen/Allure_testCase.png">
 ____
 ## <a name="Уведомления в Telegram">**Уведомления в Telegram**</a> <img width="4%" style="vertical-align:middle" title="Telegram" src="files/logo/Telegram.svg">
-### <img width="100%" style="vertical-align:middle" title="Telegram" src="files/screen/Telegram.png">
+### <img width="70%" style="vertical-align:middle" title="Telegram" src="files/screen/Telegram.png">
 ____
 ## <a name="Видео примера запуска тестов в Selenoid">**Видео примера запуска тестов в Selenoid:**</a>
 <p align="center">  
