@@ -22,7 +22,7 @@ public class MainPageTests extends TestBase {
         step("Проверяем состав разделов", () -> data.checkButtonServices("Услуги")
                 .checkButtonCenterOfExpertise("Центр экспертизы")
                 .checkButtonAboutTheCompany("О компании")
-                .chekButtonContacts("Контакты"));
+                .checkButtonContacts("Контакты"));
     }
 
     @Test

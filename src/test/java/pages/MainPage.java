@@ -62,7 +62,7 @@ public class MainPage {
         return this;
     }
 
-    public void chekButtonContacts(String value) {
+    public void checkButtonContacts(String value) {
         buttonContacts.findBy(visible).shouldHave(text(value));
     }
 
